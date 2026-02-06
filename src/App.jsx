@@ -1,12 +1,13 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from 'react'// декларативный 
+import reactLogo from './assets/react.svg' // декларативный 
+import viteLogo from '/vite.svg'// декларативный 
+import './App.css'// декларативный 
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0) // Декларативный  
+  const currentYear = new Date().getFullYear(); // Императивный   
 
-  return (
+  return ( // Весь код Декларативный  
     <>
       <div>
         <a href="https://vite.dev" target="_blank">
@@ -28,8 +29,11 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+	  <footer>
+		<p> { currentYear } </p>
+	  </footer>
     </>
   )
 }
 
-export default App
+export default App // Декларативный   
